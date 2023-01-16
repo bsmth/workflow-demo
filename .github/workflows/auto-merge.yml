@@ -5,7 +5,7 @@ on:
 
 jobs:
   auto-merge:
-    - uses: mdn/workflows/.github/workflows/auto-merge.yml@main
-      with:
-        target-repo: "bsmth/workflow-demo"
-        github-token: ${{ secrets.AUTOMERGE_TOKEN }}
+    uses: mdn/workflows/.github/workflows/auto-merge.yml@main
+    with:
+      target-repo: "bsmth/workflow-demo"
+      github-token: ${{ secrets.AUTOMERGE_TOKEN }}
